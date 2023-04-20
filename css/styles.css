@@ -1,3 +1,13 @@
+/* html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+} */
+
 :root {
   --primary-text-color: #2c2c2c;
   --secondary-text-color: #7eb101;
@@ -12,6 +22,28 @@ body {
   background-color: var(--main-background-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
@@ -19,9 +51,46 @@ body {
   text-decoration: none;
 }
 
+.container {
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
 /* ======================================================================================================
 ==============================================    HEADER      ===========================================
 ====================================================================================================== */
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 28px;
+}
+
+.menu-item:last-child {
+  margin-right: 30px;
+}
+
+.menu-link {
+  display: inline-block;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
 
 .modal-btn {
   font-family: inherit;
@@ -110,6 +179,10 @@ body {
   color: var(--primary-text-color);
 }
 
+.container-hero {
+  display: block;
+  align-items: center;
+}
 /* =========================================================
 =================    OTHER SECTION    ======================
 ========================================================= */
